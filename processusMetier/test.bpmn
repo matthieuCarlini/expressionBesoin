@@ -6,8 +6,13 @@
     </bpmn:startEvent>
     <bpmn:exclusiveGateway id="Gateway_0e0wkoe">
       <bpmn:incoming>Flow_0en6egb</bpmn:incoming>
+      <bpmn:outgoing>Flow_1amxd0c</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_0en6egb" sourceRef="StartEvent_1" targetRef="Gateway_0e0wkoe" />
+    <bpmn:endEvent id="Event_1ij6lrw">
+      <bpmn:incoming>Flow_1amxd0c</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1amxd0c" sourceRef="Gateway_0e0wkoe" targetRef="Event_1ij6lrw" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
@@ -17,9 +22,16 @@
       <bpmndi:BPMNShape id="Gateway_0e0wkoe_di" bpmnElement="Gateway_0e0wkoe" isMarkerVisible="true">
         <dc:Bounds x="385" y="95" width="50" height="50" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1ij6lrw_di" bpmnElement="Event_1ij6lrw">
+        <dc:Bounds x="582" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0en6egb_di" bpmnElement="Flow_0en6egb">
         <di:waypoint x="209" y="120" />
         <di:waypoint x="385" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1amxd0c_di" bpmnElement="Flow_1amxd0c">
+        <di:waypoint x="435" y="120" />
+        <di:waypoint x="582" y="120" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
