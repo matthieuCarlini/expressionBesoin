@@ -1,19 +1,120 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>460</x><y>140</y><w>210</w><h>90</h></coordinates><panel_attributes>tableB
+<diagram program="umletino" version="15.1"><zoom_level>19</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>798</x><y>266</y><w>399</w><h>114</h></coordinates><panel_attributes>Dispositif de financement
 --
-idtableB: int
-code : text
-libelle : text
-idtableA : int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>210</w><h>70</h></coordinates><panel_attributes>_object: Class_
+idDispositif: int
+Libelle: Texte 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>399</y><w>399</w><h>133</h></coordinates><panel_attributes>Type Financement
 --
-id: Long="36548"
-[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>tableA
+idType: int
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>646</w><h>1748</h></coordinates><panel_attributes>Convention
 --
-idtableA: int
-code : text
-libelle : text
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>200</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=-
+Numéro convention interne: Texte(10)
+Id convention du financeur: Généré automatiquement par l’outil
+Numéro convention du financeur: Texte
+Nom long de la convention: Texte
+Nom court de la convention: Texte
+Lien convention signée: Scan PDF
+idDispositif: int
+idType: int
+Nom du financeur ou des financeurs: Texte
+Code tiers signataire Qualiac: Issue du lien Qualiac
+Contact financeur: Texte
+Instructeur: Texte
+idStatutConvention: int
+Commentaires: Texte
+Date de visa du service: Date 
+Date de signature de la convention: Date
+Date de visa de la direction: Date
+Date de transmission en interne: Date
+Besoin signature nom comptable: Boolean
+Date signature agent comptable: Date
+Date d’abandon de la convention: Date
+Date d’envoi de la convention au partenaire: Date
+Date de réception de la convention signée par le partenaire: Date
+idPilote: int
+idLien appui interne: int
+Date début convention: Date
+Date fin convention: Date
+Date début éligibilité: Date
+Date fin éligibilité: Date
+idMode de calcul: int
+Plateforme dépôt de dossier: Texte
+Montant de la subvention accordé: int
+Taux de financement: int
+Reversement: int
+Montant dépenses prévisionnelles coûts directs: int 
+Montant dépenses prévisionnelles temps passés: int 
+Montant total des dépenses prévisionnelles: int
+idStatut fiscalde la convention: int
+Montant des dépenses réalisées coûts directs: int 
+Montant des dépenses réalisées temps passés: int
+Montant total des dépenses réalisées: int
+Montant des dépenses éliglibles: int
+Montant de l'aide justifiée: int
+Taux de réalisation: int
+Code article Qualiac: Issue lien Qualliac
+Facturation ingénierie: Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>209</y><w>209</w><h>152</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-possède &gt;</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>500</x><y>20</y><w>140</w><h>70</h></coordinates><panel_attributes>Note Global
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+</panel_attributes><additional_attributes>90;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>247</y><w>228</w><h>285</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>90;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>969</x><y>342</y><w>95</w><h>114</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>10;20;10;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>551</y><w>399</w><h>133</h></coordinates><panel_attributes>Statut Convention
+--
+idStatut: int
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>380</y><w>228</w><h>266</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>90;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>703</y><w>399</w><h>133</h></coordinates><panel_attributes>Pilote
+--
+idPilote: int
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>703</y><w>209</w><h>133</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>90;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1254</x><y>817</y><w>399</w><h>228</h></coordinates><panel_attributes>Lien Octagri
+--
+?idLien: int
+Numéro de commande: Issue lien Octagri
+Code produit: Issue lien Octagri
+Code activité: Issue lien Octagri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>855</y><w>399</w><h>133</h></coordinates><panel_attributes>Mode de Calcul
+--
+idMode de calcul: int
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>855</y><w>209</w><h>95</h></coordinates><panel_attributes>lt=-
+m1=
+m2=
+</panel_attributes><additional_attributes>90;30;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>1007</y><w>399</w><h>190</h></coordinates><panel_attributes>Lien type echance
+--
+idConvention: int
+idType: int
+DateLimite: Date
+DateEnvoi: Date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1292</x><y>1121</y><w>399</w><h>114</h></coordinates><panel_attributes>RefEchance
+--
+idType: int
+LibelleEchance: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>893</y><w>209</w><h>209</h></coordinates><panel_attributes>lt=-
+m1=
+m2=
+</panel_attributes><additional_attributes>90;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1178</x><y>1102</y><w>152</w><h>114</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>10;10;60;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>1216</y><w>399</w><h>133</h></coordinates><panel_attributes>Statut fiscal de la convention
+--
+idStatut fiscal de la convention: int
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>1235</y><w>209</w><h>95</h></coordinates><panel_attributes>lt=-
+m1=
+m2=
+</panel_attributes><additional_attributes>90;20;10;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>1368</y><w>399</w><h>133</h></coordinates><panel_attributes>Acompte
+--
+idAcompte: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>1520</y><w>399</w><h>133</h></coordinates><panel_attributes>Versement
+--
+idVersement: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>798</x><y>1672</y><w>399</w><h>247</h></coordinates><panel_attributes>Avenant
+--
+idAvenant: int
+Lien scan avenant: Texte
+Date de l'avenant: Date
+Date signature avenant: Date
+idConvention: int</panel_attributes><additional_attributes></additional_attributes></element></diagram>
