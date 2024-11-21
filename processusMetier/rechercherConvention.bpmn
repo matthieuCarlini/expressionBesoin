@@ -35,6 +35,7 @@
       <bpmn:outgoing>Flow_1p4v5jz</bpmn:outgoing>
       <bpmn:outgoing>Flow_19sfjww</bpmn:outgoing>
       <bpmn:outgoing>Flow_0o3bkr3</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0upoz56</bpmn:outgoing>
     </bpmn:parallelGateway>
     <bpmn:task id="Activity_0zs233x" name="Modifier une convention">
       <bpmn:incoming>Flow_0ysp5gf</bpmn:incoming>
@@ -64,6 +65,7 @@
       <bpmn:incoming>Flow_1gzc5a2</bpmn:incoming>
       <bpmn:incoming>Flow_163ax8u</bpmn:incoming>
       <bpmn:incoming>Flow_0l0utie</bpmn:incoming>
+      <bpmn:incoming>Flow_1upqe7a</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1w4i9i1" sourceRef="Activity_1v09trb" targetRef="Gateway_0sqo3n3" />
     <bpmn:sequenceFlow id="Flow_13caifw" sourceRef="Activity_0zs233x" targetRef="Event_0arsupt" />
@@ -126,7 +128,7 @@
       <bpmn:outgoing>Flow_0k9de4m</bpmn:outgoing>
       <bpmn:outgoing>Flow_1t3iyvh</bpmn:outgoing>
     </bpmn:parallelGateway>
-    <bpmn:task id="Activity_0h38i1n" name="Sélectionner un modèle">
+    <bpmn:task id="Activity_0h38i1n" name="Sélectionner un modèle d&#39;export">
       <bpmn:incoming>Flow_0k9de4m</bpmn:incoming>
       <bpmn:outgoing>Flow_127qvyr</bpmn:outgoing>
     </bpmn:task>
@@ -150,6 +152,36 @@
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0kn4erl" sourceRef="Activity_1cx2565" targetRef="Gateway_0jtl21q" />
     <bpmn:sequenceFlow id="Flow_0l0utie" sourceRef="Activity_1qwb758" targetRef="Event_0arsupt" />
+    <bpmn:parallelGateway id="Gateway_15jrz4v">
+      <bpmn:incoming>Flow_1a2tekr</bpmn:incoming>
+      <bpmn:outgoing>Flow_0mgmic6</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:task id="Activity_1ad4btf" name="Sélectionner un modèle de publipostage">
+      <bpmn:incoming>Flow_0mgmic6</bpmn:incoming>
+      <bpmn:outgoing>Flow_0uyssj0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0jih9vq" name="Actionner un bouton de lancement de procédure de publipostage">
+      <bpmn:incoming>Flow_0upoz56</bpmn:incoming>
+      <bpmn:outgoing>Flow_1a2tekr</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1a2tekr" sourceRef="Activity_0jih9vq" targetRef="Gateway_15jrz4v" />
+    <bpmn:sequenceFlow id="Flow_0mgmic6" sourceRef="Gateway_15jrz4v" targetRef="Activity_1ad4btf" />
+    <bpmn:sequenceFlow id="Flow_0uyssj0" sourceRef="Activity_1ad4btf" targetRef="Activity_0yk0izq" />
+    <bpmn:sequenceFlow id="Flow_0upoz56" sourceRef="Gateway_0f3zpfq" targetRef="Activity_0jih9vq" />
+    <bpmn:task id="Activity_0vzsacy" name="Exécuter publipostage">
+      <bpmn:incoming>Flow_0qgwdgx</bpmn:incoming>
+      <bpmn:outgoing>Flow_1upqe7a</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1upqe7a" sourceRef="Activity_0vzsacy" targetRef="Event_0arsupt" />
+    <bpmn:task id="Activity_0yk0izq" name="Sélectionner format de sortie">
+      <bpmn:incoming>Flow_0uyssj0</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qgwdgx</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0qgwdgx" sourceRef="Activity_0yk0izq" targetRef="Activity_0vzsacy" />
+    <bpmn:textAnnotation id="TextAnnotation_1mefseb">
+      <bpmn:text>.doc et .pdf</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1ijhxyf" associationDirection="None" sourceRef="Activity_0yk0izq" targetRef="TextAnnotation_1mefseb" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
@@ -249,6 +281,29 @@
         <dc:Bounds x="1150" y="710" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1sndlrx" bpmnElement="Gateway_15jrz4v">
+        <dc:Bounds x="1045" y="1025" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1a2030q" bpmnElement="Activity_1ad4btf">
+        <dc:Bounds x="1150" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0k49s2z" bpmnElement="Activity_0jih9vq">
+        <dc:Bounds x="910" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0x6vmu9" bpmnElement="Activity_0vzsacy">
+        <dc:Bounds x="1440" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0yk0izq_di" bpmnElement="Activity_0yk0izq">
+        <dc:Bounds x="1300" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1ijhxyf_di" bpmnElement="Association_1ijhxyf">
+        <di:waypoint x="1350" y="1090" />
+        <di:waypoint x="1350" y="1130" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_07o5x35_di" bpmnElement="Flow_07o5x35">
         <di:waypoint x="158" y="230" />
         <di:waypoint x="195" y="230" />
@@ -418,6 +473,37 @@
         <di:waypoint x="1275" y="810" />
         <di:waypoint x="1300" y="810" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1ajcfbe" bpmnElement="Flow_0uyssj0">
+        <di:waypoint x="1250" y="1050" />
+        <di:waypoint x="1300" y="1050" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1veulds" bpmnElement="Flow_1a2tekr">
+        <di:waypoint x="1010" y="1050" />
+        <di:waypoint x="1045" y="1050" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0ahlu0d" bpmnElement="Flow_0mgmic6">
+        <di:waypoint x="1095" y="1050" />
+        <di:waypoint x="1150" y="1050" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0upoz56_di" bpmnElement="Flow_0upoz56">
+        <di:waypoint x="890" y="255" />
+        <di:waypoint x="890" y="1050" />
+        <di:waypoint x="910" y="1050" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1upqe7a_di" bpmnElement="Flow_1upqe7a">
+        <di:waypoint x="1540" y="1050" />
+        <di:waypoint x="1580" y="1050" />
+        <di:waypoint x="1580" y="120" />
+        <di:waypoint x="1368" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qgwdgx_di" bpmnElement="Flow_0qgwdgx">
+        <di:waypoint x="1400" y="1050" />
+        <di:waypoint x="1440" y="1050" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1mefseb_di" bpmnElement="TextAnnotation_1mefseb">
+        <dc:Bounds x="1300" y="1130" width="99.99745521172639" height="29.9966917752443" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>

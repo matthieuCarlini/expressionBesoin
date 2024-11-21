@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_07o5x35</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_07o5x35" sourceRef="StartEvent_1" targetRef="Activity_0r3b081" />
+    <bpmn:task id="Activity_0r3b081" name="Créer un document Word">
+      <bpmn:incoming>Flow_07o5x35</bpmn:incoming>
+      <bpmn:outgoing>Flow_0mi67zw</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0gb60zw" name="Enregistrer le modèle sur le PC">
+      <bpmn:incoming>Flow_0mi67zw</bpmn:incoming>
+      <bpmn:outgoing>Flow_0uwt41x</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0mi67zw" sourceRef="Activity_0r3b081" targetRef="Activity_0gb60zw" />
+    <bpmn:endEvent id="Event_0xki6q8">
+      <bpmn:incoming>Flow_0up0p28</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0uwt41x" sourceRef="Activity_0gb60zw" targetRef="Activity_0xqjry2" />
+    <bpmn:task id="Activity_0xqjry2" name="Accéder au module d&#39;administration des publipostages">
+      <bpmn:incoming>Flow_0uwt41x</bpmn:incoming>
+      <bpmn:outgoing>Flow_1f6xhga</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1f6xhga" sourceRef="Activity_0xqjry2" targetRef="Activity_1o4hznv" />
+    <bpmn:task id="Activity_1o4hznv" name="Activer bouton de chargement d&#39;un publipostage">
+      <bpmn:incoming>Flow_1f6xhga</bpmn:incoming>
+      <bpmn:outgoing>Flow_16m8b66</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_16m8b66" sourceRef="Activity_1o4hznv" targetRef="Activity_1r3o2zn" />
+    <bpmn:task id="Activity_1r3o2zn" name="Sélectionner le modèle présent sur le PC">
+      <bpmn:incoming>Flow_16m8b66</bpmn:incoming>
+      <bpmn:outgoing>Flow_17imrm6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_17imrm6" sourceRef="Activity_1r3o2zn" targetRef="Activity_01bl6vr" />
+    <bpmn:task id="Activity_01bl6vr" name="Valider la création">
+      <bpmn:incoming>Flow_17imrm6</bpmn:incoming>
+      <bpmn:outgoing>Flow_0up0p28</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0up0p28" sourceRef="Activity_01bl6vr" targetRef="Event_0xki6q8" />
+    <bpmn:textAnnotation id="TextAnnotation_0je4l1j">
+      <bpmn:text>Renseigner le contenu et les variables à  interpréter</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0padiqt" associationDirection="None" sourceRef="Activity_0r3b081" targetRef="TextAnnotation_0je4l1j" />
+    <bpmn:textAnnotation id="TextAnnotation_07njg05">
+      <bpmn:text>Module accessible au rôle publiposteur</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0ni3jsq" associationDirection="None" sourceRef="Activity_0xqjry2" targetRef="TextAnnotation_07njg05" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="122" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0r3b081_di" bpmnElement="Activity_0r3b081">
+        <dc:Bounds x="200" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0gb60zw_di" bpmnElement="Activity_0gb60zw">
+        <dc:Bounds x="320" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xqjry2_di" bpmnElement="Activity_0xqjry2">
+        <dc:Bounds x="440" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1o4hznv_di" bpmnElement="Activity_1o4hznv">
+        <dc:Bounds x="560" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1r3o2zn_di" bpmnElement="Activity_1r3o2zn">
+        <dc:Bounds x="680" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_01bl6vr_di" bpmnElement="Activity_01bl6vr">
+        <dc:Bounds x="800" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0xki6q8_di" bpmnElement="Event_0xki6q8">
+        <dc:Bounds x="932" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0padiqt_di" bpmnElement="Association_0padiqt">
+        <di:waypoint x="230" y="270" />
+        <di:waypoint x="216" y="300" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0ni3jsq_di" bpmnElement="Association_0ni3jsq">
+        <di:waypoint x="490" y="270" />
+        <di:waypoint x="490" y="320" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_07o5x35_di" bpmnElement="Flow_07o5x35">
+        <di:waypoint x="158" y="230" />
+        <di:waypoint x="200" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mi67zw_di" bpmnElement="Flow_0mi67zw">
+        <di:waypoint x="300" y="230" />
+        <di:waypoint x="320" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0uwt41x_di" bpmnElement="Flow_0uwt41x">
+        <di:waypoint x="420" y="230" />
+        <di:waypoint x="440" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1f6xhga_di" bpmnElement="Flow_1f6xhga">
+        <di:waypoint x="540" y="230" />
+        <di:waypoint x="560" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16m8b66_di" bpmnElement="Flow_16m8b66">
+        <di:waypoint x="660" y="230" />
+        <di:waypoint x="680" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17imrm6_di" bpmnElement="Flow_17imrm6">
+        <di:waypoint x="780" y="230" />
+        <di:waypoint x="800" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0up0p28_di" bpmnElement="Flow_0up0p28">
+        <di:waypoint x="900" y="230" />
+        <di:waypoint x="932" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0je4l1j_di" bpmnElement="TextAnnotation_0je4l1j">
+        <dc:Bounds x="160" y="300" width="239.99519494783087" height="40.637012630422845" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_07njg05_di" bpmnElement="TextAnnotation_07njg05">
+        <dc:Bounds x="440" y="320" width="99.99202297383536" height="69.55966815571155" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
