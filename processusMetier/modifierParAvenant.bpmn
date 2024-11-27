@@ -25,7 +25,7 @@
       <bpmn:outgoing>Flow_1d8z68b</bpmn:outgoing>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_1d8z68b" sourceRef="Activity_0niwe3x" targetRef="Activity_1w57tlz" />
-    <bpmn:task id="Activity_02ntclg" name="Actionner un bouton permettant l&#39;édition">
+    <bpmn:task id="Activity_02ntclg" name="Actionner un bouton permettant l&#39;édition par avenant">
       <bpmn:incoming>Flow_0dy1hzp</bpmn:incoming>
       <bpmn:outgoing>Flow_0d90ke5</bpmn:outgoing>
     </bpmn:task>
@@ -42,7 +42,7 @@
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0v5ptuu" name="non" sourceRef="Gateway_0liom6x" targetRef="Activity_19hbpfg" />
     <bpmn:sequenceFlow id="Flow_0ejzta2" sourceRef="Activity_19hbpfg" targetRef="Event_0qrjdcp" />
-    <bpmn:subProcess id="Activity_1rfqk5e" name="Rechercher convention">
+    <bpmn:subProcess id="Activity_1rfqk5e" name="Recherche d&#39;une convention">
       <bpmn:incoming>Flow_0ibz2yj</bpmn:incoming>
       <bpmn:outgoing>Flow_193i2zl</bpmn:outgoing>
     </bpmn:subProcess>
@@ -98,6 +98,7 @@ Champs obligatoires</bpmn:text>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0qqxahb_di" bpmnElement="Activity_1rfqk5e">
         <dc:Bounds x="310" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_0kem9yx" bpmnElement="Activity_0bw8llx">
         <dc:Bounds x="480" y="80" width="100" height="80" />

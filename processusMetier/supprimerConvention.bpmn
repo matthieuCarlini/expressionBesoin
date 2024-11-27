@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_0ibz2yj</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_0qrjdcp">
+      <bpmn:incoming>Flow_1edv4c9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0ibz2yj" sourceRef="StartEvent_1" targetRef="Activity_1rfqk5e" />
+    <bpmn:sequenceFlow id="Flow_193i2zl" sourceRef="Activity_1rfqk5e" targetRef="Activity_0bw8llx" />
+    <bpmn:task id="Activity_02ntclg" name="Actionner un bouton de suppression">
+      <bpmn:incoming>Flow_0dy1hzp</bpmn:incoming>
+      <bpmn:outgoing>Flow_1edv4c9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:subProcess id="Activity_1rfqk5e" name="Recherche d&#39;une convention">
+      <bpmn:incoming>Flow_0ibz2yj</bpmn:incoming>
+      <bpmn:outgoing>Flow_193i2zl</bpmn:outgoing>
+    </bpmn:subProcess>
+    <bpmn:task id="Activity_0bw8llx" name="Sélectionner la convention à modifier">
+      <bpmn:incoming>Flow_193i2zl</bpmn:incoming>
+      <bpmn:outgoing>Flow_0dy1hzp</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0dy1hzp" sourceRef="Activity_0bw8llx" targetRef="Activity_02ntclg" />
+    <bpmn:sequenceFlow id="Flow_1edv4c9" sourceRef="Activity_02ntclg" targetRef="Event_0qrjdcp" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0murefx" bpmnElement="Activity_02ntclg">
+        <dc:Bounds x="650" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0qrjdcp_di" bpmnElement="Event_0qrjdcp">
+        <dc:Bounds x="852" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0qqxahb_di" bpmnElement="Activity_1rfqk5e">
+        <dc:Bounds x="310" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0kem9yx" bpmnElement="Activity_0bw8llx">
+        <dc:Bounds x="480" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0ibz2yj_di" bpmnElement="Flow_0ibz2yj">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="310" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_193i2zl_di" bpmnElement="Flow_193i2zl">
+        <di:waypoint x="410" y="120" />
+        <di:waypoint x="480" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0dy1hzp_di" bpmnElement="Flow_0dy1hzp">
+        <di:waypoint x="580" y="120" />
+        <di:waypoint x="650" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1edv4c9_di" bpmnElement="Flow_1edv4c9">
+        <di:waypoint x="750" y="120" />
+        <di:waypoint x="852" y="120" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_15vb4u5">
+    <bpmndi:BPMNPlane id="BPMNPlane_0vjpe1m" bpmnElement="Activity_1rfqk5e" />
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

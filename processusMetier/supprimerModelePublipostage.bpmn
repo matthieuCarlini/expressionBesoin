@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1k9ho5d</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_0xki6q8">
+      <bpmn:incoming>Flow_17imrm6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="Activity_0xqjry2" name="Accéder au module d&#39;administration des publipostages">
+      <bpmn:incoming>Flow_1k9ho5d</bpmn:incoming>
+      <bpmn:outgoing>Flow_1f6xhga</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1f6xhga" sourceRef="Activity_0xqjry2" targetRef="Activity_1o4hznv" />
+    <bpmn:task id="Activity_1o4hznv" name="Sélectionner modèle à supprimer">
+      <bpmn:incoming>Flow_1f6xhga</bpmn:incoming>
+      <bpmn:outgoing>Flow_16m8b66</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_16m8b66" sourceRef="Activity_1o4hznv" targetRef="Activity_1r3o2zn" />
+    <bpmn:task id="Activity_1r3o2zn" name="Actionner un bouton de suppression">
+      <bpmn:incoming>Flow_16m8b66</bpmn:incoming>
+      <bpmn:outgoing>Flow_17imrm6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_17imrm6" sourceRef="Activity_1r3o2zn" targetRef="Event_0xki6q8" />
+    <bpmn:sequenceFlow id="Flow_1k9ho5d" sourceRef="StartEvent_1" targetRef="Activity_0xqjry2" />
+    <bpmn:textAnnotation id="TextAnnotation_07njg05">
+      <bpmn:text>Module accessible au rôle publiposteur</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0ni3jsq" associationDirection="None" sourceRef="Activity_0xqjry2" targetRef="TextAnnotation_07njg05" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="342" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0xki6q8_di" bpmnElement="Event_0xki6q8">
+        <dc:Bounds x="932" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xqjry2_di" bpmnElement="Activity_0xqjry2">
+        <dc:Bounds x="440" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1r3o2zn_di" bpmnElement="Activity_1r3o2zn">
+        <dc:Bounds x="750" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1o4hznv_di" bpmnElement="Activity_1o4hznv">
+        <dc:Bounds x="600" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_07njg05_di" bpmnElement="TextAnnotation_07njg05">
+        <dc:Bounds x="440" y="300" width="100" height="70" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1f6xhga_di" bpmnElement="Flow_1f6xhga">
+        <di:waypoint x="540" y="230" />
+        <di:waypoint x="600" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16m8b66_di" bpmnElement="Flow_16m8b66">
+        <di:waypoint x="700" y="230" />
+        <di:waypoint x="750" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17imrm6_di" bpmnElement="Flow_17imrm6">
+        <di:waypoint x="850" y="230" />
+        <di:waypoint x="932" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1k9ho5d_di" bpmnElement="Flow_1k9ho5d">
+        <di:waypoint x="378" y="230" />
+        <di:waypoint x="440" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0ni3jsq_di" bpmnElement="Association_0ni3jsq">
+        <di:waypoint x="490" y="270" />
+        <di:waypoint x="490" y="300" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
