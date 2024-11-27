@@ -28,10 +28,6 @@
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0up0p28" sourceRef="Activity_01bl6vr" targetRef="Event_0xki6q8" />
     <bpmn:sequenceFlow id="Flow_1k9ho5d" sourceRef="StartEvent_1" targetRef="Activity_0xqjry2" />
-    <bpmn:textAnnotation id="TextAnnotation_07njg05">
-      <bpmn:text>Module accessible au rôle publiposteur</bpmn:text>
-    </bpmn:textAnnotation>
-    <bpmn:association id="Association_0ni3jsq" associationDirection="None" sourceRef="Activity_0xqjry2" targetRef="TextAnnotation_07njg05" />
     <bpmn:textAnnotation id="TextAnnotation_1rflrzu">
       <bpmn:text>Date de début
 Date de fin
@@ -63,12 +59,8 @@ Nom</bpmn:text>
         <dc:Bounds x="800" y="190" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_1pe9qcz_di" bpmnElement="Association_1pe9qcz">
-        <di:waypoint x="730" y="270" />
-        <di:waypoint x="730" y="315" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_07njg05_di" bpmnElement="TextAnnotation_07njg05">
-        <dc:Bounds x="440" y="300" width="100" height="70" />
+      <bpmndi:BPMNShape id="TextAnnotation_1rflrzu_di" bpmnElement="TextAnnotation_1rflrzu">
+        <dc:Bounds x="680" y="315" width="100" height="55" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1f6xhga_di" bpmnElement="Flow_1f6xhga">
@@ -91,14 +83,10 @@ Nom</bpmn:text>
         <di:waypoint x="378" y="230" />
         <di:waypoint x="440" y="230" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_0ni3jsq_di" bpmnElement="Association_0ni3jsq">
-        <di:waypoint x="490" y="270" />
-        <di:waypoint x="490" y="300" />
+      <bpmndi:BPMNEdge id="Association_1pe9qcz_di" bpmnElement="Association_1pe9qcz">
+        <di:waypoint x="730" y="270" />
+        <di:waypoint x="730" y="315" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_1rflrzu_di" bpmnElement="TextAnnotation_1rflrzu">
-        <dc:Bounds x="680" y="315" width="100" height="55" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
