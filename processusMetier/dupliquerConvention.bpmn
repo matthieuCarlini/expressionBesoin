@@ -10,7 +10,7 @@
       <bpmn:incoming>Flow_0dy1hzp</bpmn:incoming>
       <bpmn:outgoing>Flow_0ilyilv</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:subProcess id="Activity_1rfqk5e" name="Rechercher convention">
+    <bpmn:subProcess id="Activity_1rfqk5e" name="Recherche d&#39;une convention">
       <bpmn:incoming>Flow_0ibz2yj</bpmn:incoming>
       <bpmn:outgoing>Flow_193i2zl</bpmn:outgoing>
     </bpmn:subProcess>
@@ -20,7 +20,7 @@
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0dy1hzp" sourceRef="Activity_0bw8llx" targetRef="Activity_02ntclg" />
     <bpmn:sequenceFlow id="Flow_0ilyilv" sourceRef="Activity_02ntclg" targetRef="Activity_0dhk4b2" />
-    <bpmn:subProcess id="Activity_0dhk4b2" name="Dérouler le processus de modification d&#39;une convention">
+    <bpmn:subProcess id="Activity_0dhk4b2" name="Modification d&#39;une convention">
       <bpmn:incoming>Flow_0ilyilv</bpmn:incoming>
       <bpmn:outgoing>Flow_1gzssgj</bpmn:outgoing>
     </bpmn:subProcess>
@@ -40,6 +40,7 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0qqxahb_di" bpmnElement="Activity_1rfqk5e">
         <dc:Bounds x="310" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_0kem9yx" bpmnElement="Activity_0bw8llx">
         <dc:Bounds x="480" y="80" width="100" height="80" />
