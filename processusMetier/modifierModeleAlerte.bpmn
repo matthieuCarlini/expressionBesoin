@@ -29,9 +29,9 @@
     <bpmn:sequenceFlow id="Flow_0up0p28" sourceRef="Activity_01bl6vr" targetRef="Event_0xki6q8" />
     <bpmn:sequenceFlow id="Flow_1k9ho5d" sourceRef="StartEvent_1" targetRef="Activity_0xqjry2" />
     <bpmn:textAnnotation id="TextAnnotation_1rflrzu">
-      <bpmn:text>Date de début
-Date de fin
-Nom</bpmn:text>
+      <bpmn:text>Statut actif/inactif
+Nom
+Personnes destinataires</bpmn:text>
     </bpmn:textAnnotation>
     <bpmn:association id="Association_1pe9qcz" associationDirection="None" sourceRef="Activity_1r3o2zn" targetRef="TextAnnotation_1rflrzu" />
   </bpmn:process>
@@ -60,7 +60,7 @@ Nom</bpmn:text>
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_1rflrzu_di" bpmnElement="TextAnnotation_1rflrzu">
-        <dc:Bounds x="680" y="315" width="100" height="55" />
+        <dc:Bounds x="680" y="315" width="153.9973907470703" height="55.98958206176758" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1f6xhga_di" bpmnElement="Flow_1f6xhga">

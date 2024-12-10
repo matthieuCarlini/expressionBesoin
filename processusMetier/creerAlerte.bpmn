@@ -28,13 +28,15 @@
       <bpmn:incoming>Flow_08vao78</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_08vao78" sourceRef="Activity_19hfivs" targetRef="Event_1edevwy" />
-    <bpmn:task id="Activity_1p42gts" name="Accéder au module d&#39;administration des alertes">
+    <bpmn:task id="Activity_1p42gts" name="Accéder au module de recherche avancé">
       <bpmn:incoming>Flow_0baz33s</bpmn:incoming>
       <bpmn:outgoing>Flow_0d5hra6</bpmn:outgoing>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0d5hra6" sourceRef="Activity_1p42gts" targetRef="Activity_1d1zmk0" />
     <bpmn:textAnnotation id="TextAnnotation_07bymk9">
-      <bpmn:text>Les destinataires (définis dans les champs de la convention et / ou dans la liste des utilisateurs de l'établissement)</bpmn:text>
+      <bpmn:text>Les destinataires (définis dans les champs de la convention et / ou dans la liste des utilisateurs de l'établissement)
+nom de l'alerte
+alerte active/inactive</bpmn:text>
     </bpmn:textAnnotation>
     <bpmn:association id="Association_0khqzkh" associationDirection="None" sourceRef="Activity_0t4atvs" targetRef="TextAnnotation_07bymk9" />
   </bpmn:process>
@@ -66,21 +68,13 @@
         <dc:Bounds x="300" y="80" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_0khqzkh_di" bpmnElement="Association_0khqzkh">
-        <di:waypoint x="842" y="80" />
-        <di:waypoint x="863" y="10" />
-      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_07bymk9_di" bpmnElement="TextAnnotation_07bymk9">
+        <dc:Bounds x="810" y="-120" width="220" height="97.99478912353516" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0baz33s_di" bpmnElement="Flow_0baz33s">
         <di:waypoint x="209" y="120" />
         <di:waypoint x="300" y="120" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_07bymk9_di" bpmnElement="TextAnnotation_07bymk9">
-        <dc:Bounds x="830" y="-60" width="219.9964103382259" height="69.55966815571155" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Flow_0d5hra6_di" bpmnElement="Flow_0d5hra6">
-        <di:waypoint x="400" y="120" />
-        <di:waypoint x="460" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0f4udn3_di" bpmnElement="Flow_0f4udn3">
         <di:waypoint x="560" y="120" />
@@ -97,6 +91,14 @@
       <bpmndi:BPMNEdge id="Flow_08vao78_di" bpmnElement="Flow_08vao78">
         <di:waypoint x="1040" y="120" />
         <di:waypoint x="1102" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0d5hra6_di" bpmnElement="Flow_0d5hra6">
+        <di:waypoint x="400" y="120" />
+        <di:waypoint x="460" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0khqzkh_di" bpmnElement="Association_0khqzkh">
+        <di:waypoint x="836" y="80" />
+        <di:waypoint x="852" y="-22" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

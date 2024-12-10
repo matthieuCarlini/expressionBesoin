@@ -1,12 +1,12 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>198</x><y>117</y><w>189</w><h>81</h></coordinates><panel_attributes>dispositifFinancement
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>108</x><y>163</y><w>189</w><h>81</h></coordinates><panel_attributes>dispositifFinancement
 --
 idDispositif: int
 idType: int
 Libelle: Texte 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>207</x><y>0</y><w>189</w><h>63</h></coordinates><panel_attributes>typeFinancement
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>46</y><w>189</w><h>63</h></coordinates><panel_attributes>typeFinancement
 --
 idType: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>0</y><w>306</w><h>882</h></coordinates><panel_attributes>Convention
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>46</y><w>306</w><h>882</h></coordinates><panel_attributes>Convention
 --
 codeInterne: Texte(10)
 idConvention: Généré automatiquement par l’outil
@@ -73,57 +73,57 @@ commentaireSuiviBudgetaire: text
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>117</y><w>225</w><h>54</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>163</y><w>225</w><h>54</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;30;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>387</x><y>18</y><w>216</w><h>108</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;30;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>64</y><w>216</w><h>108</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;10;220;100</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>54</y><w>72</w><h>81</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;220;100</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>100</y><w>72</w><h>81</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;70;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>207</y><w>189</w><h>63</h></coordinates><panel_attributes>statutconvention
+</panel_attributes><additional_attributes>10;70;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>253</y><w>189</w><h>63</h></coordinates><panel_attributes>statutconvention
 --
 idStatut: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>198</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>244</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;40;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>279</y><w>189</w><h>63</h></coordinates><panel_attributes>appuiInterne
+</panel_attributes><additional_attributes>10;40;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>325</y><w>189</w><h>63</h></coordinates><panel_attributes>appuiInterne
 --
 idConvention
-codeAppuiInterne : issu lien api ocatgri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1044</x><y>351</y><w>189</w><h>108</h></coordinates><panel_attributes>Lien Octagri
+codeAppuiInterne : issu lien api ocatgri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>954</x><y>397</y><w>189</w><h>108</h></coordinates><panel_attributes>Lien Octagri
 --
 ?idLien: int
 Numéro de commande: Issue lien Octagri
 Code produit: Issue lien Octagri
-Code activité: Issue lien Octagri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>360</y><w>189</w><h>63</h></coordinates><panel_attributes>modeCalcul
+Code activité: Issue lien Octagri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>108</x><y>406</y><w>189</w><h>63</h></coordinates><panel_attributes>modeCalcul
 --
 idMode de calcul: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>378</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>424</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;10;230;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>171</x><y>450</y><w>189</w><h>90</h></coordinates><panel_attributes>echeance
+</panel_attributes><additional_attributes>10;10;230;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>81</x><y>496</y><w>189</w><h>90</h></coordinates><panel_attributes>echeance
 --
 idConvention: int
 identifianttypeecheance: int
 DateLimite: Date
 DateEnvoi: Date
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>171</x><y>594</y><w>189</w><h>54</h></coordinates><panel_attributes>typeEcheance
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>81</x><y>640</y><w>189</w><h>54</h></coordinates><panel_attributes>typeEcheance
 --
 identifianttypeecheance: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>351</x><y>36</y><w>252</w><h>459</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>82</y><w>252</w><h>459</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;490;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>531</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;490;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>577</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>666</y><w>189</w><h>63</h></coordinates><panel_attributes>statutFiscal
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>712</y><w>189</w><h>63</h></coordinates><panel_attributes>statutFiscal
 --
 idStatutFiscal: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>531</y><w>333</w><h>180</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>577</y><w>333</w><h>180</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;180;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>747</y><w>189</w><h>126</h></coordinates><panel_attributes>acompte
+</panel_attributes><additional_attributes>10;180;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>99</x><y>793</y><w>189</w><h>126</h></coordinates><panel_attributes>acompte
 --
 idAcompte: int
 numeroAcompte: int
@@ -132,10 +132,10 @@ montantDemande: real
 dateDemande: date
 montantRecu: real
 dateReception: date
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>900</y><w>189</w><h>63</h></coordinates><panel_attributes>Versement
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>666</x><y>946</y><w>189</w><h>63</h></coordinates><panel_attributes>Versement
 --
 idVersement: int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>963</x><y>90</y><w>189</w><h>117</h></coordinates><panel_attributes>Avenant
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>873</x><y>136</y><w>189</w><h>117</h></coordinates><panel_attributes>Avenant
 --
 idAvenant: int
 numeroAvenant: int (numéroqtion cohérente pour une convention / incrément)
@@ -143,16 +143,16 @@ documentJoint: bytea
 date: Date
 dateSignature: Date
 idConvention: int
-commentaireAvenant: text</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>36</y><w>234</w><h>288</h></coordinates><panel_attributes>lt=-
+commentaireAvenant: text</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>82</y><w>234</w><h>288</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;300;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>36</y><w>234</w><h>783</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;300;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>82</y><w>234</w><h>783</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;850;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>882</x><y>36</y><w>99</w><h>171</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;850;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>82</y><w>99</w><h>171</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;10;90;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>981</x><y>531</y><w>189</w><h>63</h></coordinates><panel_attributes>suiviBudgetaire
+</panel_attributes><additional_attributes>10;10;90;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>891</x><y>577</y><w>189</w><h>63</h></coordinates><panel_attributes>suiviBudgetaire
 --
 idSuivibudgetaire: int
 idconvention: int
