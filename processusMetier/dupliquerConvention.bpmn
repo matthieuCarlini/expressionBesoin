@@ -14,7 +14,7 @@
       <bpmn:incoming>Flow_0ibz2yj</bpmn:incoming>
       <bpmn:outgoing>Flow_193i2zl</bpmn:outgoing>
     </bpmn:subProcess>
-    <bpmn:task id="Activity_0bw8llx" name="Sélectionner la convention à modifier">
+    <bpmn:task id="Activity_0bw8llx" name="Ouvrir la convention à dupliquer">
       <bpmn:incoming>Flow_193i2zl</bpmn:incoming>
       <bpmn:outgoing>Flow_0dy1hzp</bpmn:outgoing>
     </bpmn:task>

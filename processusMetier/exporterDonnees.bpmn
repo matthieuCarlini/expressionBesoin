@@ -37,7 +37,7 @@
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="Flow_1t32e7f" sourceRef="Event_1ayjtxv" targetRef="Activity_1cqe6rn" />
     <bpmn:sequenceFlow id="Flow_163bc00" sourceRef="Activity_1cqe6rn" targetRef="Activity_1v09trb" />
-    <bpmn:subProcess id="Activity_1cqe6rn" name="recherche d&#39;une convention">
+    <bpmn:subProcess id="Activity_1cqe6rn" name="recherche de convention">
       <bpmn:incoming>Flow_1t32e7f</bpmn:incoming>
       <bpmn:outgoing>Flow_163bc00</bpmn:outgoing>
     </bpmn:subProcess>
@@ -71,6 +71,7 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0knv0ui_di" bpmnElement="Activity_1cqe6rn">
         <dc:Bounds x="650" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1w4i9i1_di" bpmnElement="Flow_1w4i9i1">
         <di:waypoint x="970" y="120" />
