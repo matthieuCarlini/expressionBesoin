@@ -1,129 +1,59 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>237</x><y>192</y><w>189</w><h>81</h></coordinates><panel_attributes>dispositifFinancement
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>27</x><y>117</y><w>189</w><h>81</h></coordinates><panel_attributes>dispositifFinancement
 --
 idDispositif: int
 idType: int
 Libelle: Texte 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>246</x><y>75</y><w>189</w><h>63</h></coordinates><panel_attributes>typeFinancement
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>36</x><y>0</y><w>189</w><h>63</h></coordinates><panel_attributes>typeFinancement
 --
 idType: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>624</x><y>75</y><w>306</w><h>882</h></coordinates><panel_attributes>Convention
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>558</y><w>306</w><h>117</h></coordinates><panel_attributes>Convention
 --
-codeInterne: Texte(10)
-idConvention: Généré automatiquement par l’outil
-idConventionMere: int
-codeConventionFinanceur: Texte
-libelleCourt: Texte
-libelleLong: Texte
-documentJoint: bytea
-idType: int
-idDispositif: int
-nomFinanceur: Texte
-codeSignataire: Issue du lien tiers octagri
-contactFinanceur: Texte
-instructeur: Texte
-commentaireDenomination: Texte
-idStatutConvention: int
-dateVisaService: Date 
-dateSigantureConvention: Date
-dateVisaDirection: Date
-dateTransmissionInterne: Date
-besoinSignatureAgentComptable: Boolean
-dateSignatureAgentComptable: Date
-dateAbandonConvention: Date
-dateEnvoiConventionPartenaire: Date
-dateReceptionConventionSignee: Date
-commentaireStatutSignature: texte
-codePilote: code acteur issu API Octagri
-dateDebutConvention: Date
-dateFinConvention: Date
-dateDebutEligibilite: Date
-dateFinEligibilite: Date
-idModeCalcul: int
-urlDepotDossier: URL
-commentairePilotageAdministratif : texte
-montantSubventionAccorde: real
-tauxFinancement: real
-reversement: boolean
-montantDepensePrevisionnelleCoutDirect: real
-montantDepensePrevisionnelleTempsPasse: real
-montantTotaldepensePrevisionnelle: real - calculé
-idStatutFiscal: int
-montantDepenseRealiseeCoutDirect: real
-montantDepenseRealiseeTempsPasse: real
-montantTotaldepenseRealisee: real - calculé
-montantDepenseEligible: real
-montantAideJustifiee: real
-tauxRealisation: real
-commentaireFinancementDepense: text
--- montant acompte prévisionnel ??
-soldePrevisionnelARecevoir : real (calculé)
-???
-commentaireSuiviVersement: text
-?codeArticleQualiac: Issu lien Qualliac
-compteProduit: lien Qualiac (GSART ?)
-cgr: Issu lien Qualliac
-cgr1: Issu lien Qualliac
-cgr2: Issu lien Qualliac
-cgr3: Issu lien Qualliac
-cgr4: Issu lien Qualliac
-cgr5: Issu lien Qualliac
-cgr6: Issu lien Qualliac
-facturationIngenierie: Boolean
-commentaireSuiviBudgetaire: text
-
-
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>417</x><y>192</y><w>225</w><h>54</h></coordinates><panel_attributes>lt=-
+Champs décrits dans le fichier table et champs</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>135</y><w>252</w><h>441</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;30;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>426</x><y>93</y><w>216</w><h>108</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;250;470</additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>18</y><w>243</w><h>558</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;10;220;100</additional_attributes></element><element><id>Relation</id><coordinates><x>309</x><y>129</y><w>72</w><h>81</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;240;600</additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>54</y><w>72</w><h>81</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;70;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>237</x><y>282</y><w>189</w><h>63</h></coordinates><panel_attributes>statutconvention
+</panel_attributes><additional_attributes>10;70;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>207</y><w>189</w><h>63</h></coordinates><panel_attributes>statutconvention
 --
 idStatut: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>417</x><y>273</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>225</y><w>252</w><h>351</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;40;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>237</x><y>354</y><w>189</w><h>63</h></coordinates><panel_attributes>appuiInterne
+</panel_attributes><additional_attributes>10;10;250;370</additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>279</y><w>189</w><h>63</h></coordinates><panel_attributes>appuiInterne
 --
 idConvention
-codeAppuiInterne : issu lien api ocatgri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1101</x><y>687</y><w>189</w><h>108</h></coordinates><panel_attributes>Lien Octagri
---
-?idLien: int
-Numéro de commande: Issue lien Octagri
-Code produit: Issue lien Octagri
-Code activité: Issue lien Octagri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>237</x><y>435</y><w>189</w><h>63</h></coordinates><panel_attributes>modeCalcul
+codeAppuiInterne : issu lien api ocatgri</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>360</y><w>189</w><h>63</h></coordinates><panel_attributes>modeCalcul
 --
 idMode de calcul: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>417</x><y>453</y><w>225</w><h>63</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>378</y><w>243</w><h>261</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;10;230;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>525</y><w>189</w><h>90</h></coordinates><panel_attributes>echeance
+</panel_attributes><additional_attributes>10;10;250;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>450</y><w>189</w><h>90</h></coordinates><panel_attributes>echeance
 --
 idConvention: int
 identifianttypeecheance: int
 DateLimite: Date
 DateEnvoi: Date
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>669</y><w>189</w><h>54</h></coordinates><panel_attributes>typeEcheance
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>594</y><w>189</w><h>54</h></coordinates><panel_attributes>typeEcheance
 --
 identifianttypeecheance: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>111</y><w>252</w><h>459</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>468</y><w>270</w><h>108</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;490;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>291</x><y>606</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;280;100</additional_attributes></element><element><id>Relation</id><coordinates><x>81</x><y>531</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>129</x><y>741</y><w>189</w><h>63</h></coordinates><panel_attributes>statutFiscal
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>9</x><y>738</y><w>189</w><h>63</h></coordinates><panel_attributes>statutFiscal
 --
 idStatutFiscal: int
-Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>309</x><y>606</y><w>333</w><h>180</h></coordinates><panel_attributes>lt=-
+Libelle: Texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>666</y><w>261</w><h>117</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;180;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>822</y><w>189</w><h>126</h></coordinates><panel_attributes>acompte
+</panel_attributes><additional_attributes>10;110;270;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>207</y><w>189</w><h>126</h></coordinates><panel_attributes>acompte
 --
 idAcompte: int
 numeroAcompte: int
@@ -132,10 +62,7 @@ montantDemande: real
 dateDemande: date
 montantRecu: real
 dateReception: date
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1110</x><y>813</y><w>189</w><h>63</h></coordinates><panel_attributes>Versement
---
-idVersement: int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1029</x><y>138</y><w>189</w><h>117</h></coordinates><panel_attributes>Avenant
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>819</x><y>63</y><w>189</w><h>117</h></coordinates><panel_attributes>Avenant
 --
 idAvenant: int
 numeroAvenant: int (numéroqtion cohérente pour une convention / incrément)
@@ -143,16 +70,16 @@ documentJoint: bytea
 date: Date
 dateSignature: Date
 idConvention: int
-commentaireAvenant: text</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>417</x><y>111</y><w>234</w><h>288</h></coordinates><panel_attributes>lt=-
+commentaireAvenant: text</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>297</y><w>252</w><h>279</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>10;300;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>111</y><w>234</w><h>783</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;250;290</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>261</y><w>135</w><h>315</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;850;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>921</x><y>111</y><w>126</w><h>144</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>130;10;10;330</additional_attributes></element><element><id>Relation</id><coordinates><x>729</x><y>153</y><w>108</w><h>423</h></coordinates><panel_attributes>lt=-
 m1=
 m2=
-</panel_attributes><additional_attributes>10;10;120;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1029</x><y>300</y><w>189</w><h>144</h></coordinates><panel_attributes>suiviBudgetaire
+</panel_attributes><additional_attributes>10;450;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>819</x><y>225</y><w>189</w><h>144</h></coordinates><panel_attributes>suiviBudgetaire
 --
 idSuivibudgetaire: int
 idconvention: int
@@ -161,7 +88,17 @@ engage: real
 budgetInitial: real
 budgetRectificatif: real
 compteFinancier: real
-produitaRecevoir: real</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>921</x><y>111</y><w>135</w><h>252</h></coordinates><panel_attributes>lt=-
+produitaRecevoir: real</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>729</x><y>261</y><w>117</w><h>315</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-</panel_attributes><additional_attributes>120;260;10;10</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes>100;10;10;330</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1053</x><y>648</y><w>270</w><h>63</h></coordinates><panel_attributes>octagriTiersPersonne
+--
+idOctagriTiersPersonne
+Champs décrits dans le fichier table et champs</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1053</x><y>738</y><w>270</w><h>63</h></coordinates><panel_attributes>octagriTiersEntreprise
+--
+idOctagriTiersentreprise
+Champs décrits dans le fichier table et champs</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>729</x><y>585</y><w>342</w><h>108</h></coordinates><panel_attributes>lt=-
+idOctagriTiersPersonnePilote
+m1=0..n
+m2=0..1
+</panel_attributes><additional_attributes>360;100;10;10</additional_attributes></element></diagram>
